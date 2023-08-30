@@ -1,0 +1,138 @@
+/* Violet: hsl(257, 40%, 49%)
+Soft Magenta: hsl(300, 69%, 71%) */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.container .logo img{
+    width: 200px;
+}
+.container .landing{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.container .landing .intro{
+    margin-left: 50px;
+    width: 50%;
+}
+.container .landing img{
+    width: 50%;
+}
+.container .landing .intro h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.container .landing .intro p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #eeeeee;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.container .landing .intro button{
+    font-family: 'Open Sans', sans-serif;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    font-weight: 400;
+    box-shadow: 5px 5px 10px hsl(0deg 0% 0% / 50%);
+    transition: 0.3s;
+}
+.container .landing .intro button:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+.container .icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.container .icons i{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.container .icons i:hover{
+    cursor: pointer;
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+.container .icons i:not(:last-child){
+    margin-right: 20px;
+}
+@media (max-width: 1050px) {
+    body{
+        background-image: url(../images/bg-mobile.svg);
+        background-position: top;
+        background-size: contain;
+    }
+    .container{
+        padding: 30px;
+        min-height: 100vh;
+    }
+    .container .logo img{
+        width: 100px;
+    }
+    .container .landing{
+        flex-direction: column;
+    }
+    .container .landing img{
+        width: 100%;
+    }
+    .container .landing .intro{
+        width: 100%;
+        text-align: center;
+        margin: 30px 0;
+    }
+    .container .landing .intro h1{
+        font-size: 25px;
+    }
+    .container .landing .intro p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .container .landing .intro button{
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .container .icons{
+        justify-content: center;
+        padding: 30px;
+    }
+}
